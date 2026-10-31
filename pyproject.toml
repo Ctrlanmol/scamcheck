@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scamcheck"
+version = "0.13.0"
+description = "Offline-first scam triage and evidence kit: explainable verdicts, playbooks, indicators and tamper-evident cases"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "scamcheck contributors" }]
+keywords = [
+    "scam", "scam-detection", "phishing", "smishing", "fraud",
+    "security", "privacy", "offline", "local-first", "cli", "mcp", "osint",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Text Processing :: Filters",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ctrlanmol/scamcheck"
+Repository = "https://github.com/Ctrlanmol/scamcheck"
+Issues = "https://github.com/Ctrlanmol/scamcheck/issues"
+Changelog = "https://github.com/Ctrlanmol/scamcheck/blob/main/docs/ROADMAP.md"
+
+[project.scripts]
+scamcheck = "scamcheck.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["scamcheck*"]
